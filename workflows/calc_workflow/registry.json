@@ -1,0 +1,81 @@
+{
+  "artifact_type": "workflow",
+  "change_type": "create",
+  "config": {
+    "connections": [
+      {
+        "id": "e1",
+        "route_key": null,
+        "source": "start",
+        "state_injections": [],
+        "target": "calc"
+      },
+      {
+        "id": "e2",
+        "route_key": null,
+        "source": "calc",
+        "state_injections": [],
+        "target": "end"
+      }
+    ],
+    "description": "Adds two integers with the calculator agent",
+    "name": "calc_workflow",
+    "nodes": [
+      {
+        "id": "start",
+        "label": "Start",
+        "type": "start"
+      },
+      {
+        "agent_name": "p_calc",
+        "id": "calc",
+        "label": "Calculator",
+        "type": "agent"
+      },
+      {
+        "id": "end",
+        "label": "End",
+        "type": "end"
+      }
+    ],
+    "workflow_level_auth_required": false
+  },
+  "created_by": null,
+  "dependencies": [
+    {
+      "name": "p_calc",
+      "origin": "platform",
+      "type": "agent",
+      "upstream_content_hash": "e47a184cd39799b571d01fbce97330888c0e650581e6f8b0b0ed852d6e138b7d",
+      "upstream_version": "platform"
+    },
+    {
+      "name": "p_calculator_tools.py",
+      "origin": "platform",
+      "type": "tool",
+      "upstream_content_hash": "7c124abfe565f10c7f538ea1403d0d79afa29836518a2676c6a9e6193019a618",
+      "upstream_version": "platform"
+    }
+  ],
+  "description": "Adds two integers with the calculator agent",
+  "display_name": "Calc Workflow",
+  "files": [
+    "workflows/calc_workflow/__init__.py",
+    "workflows/calc_workflow/agent.py"
+  ],
+  "name": "calc_workflow",
+  "origin": "tenant_generated",
+  "replaces_version_no": null,
+  "restored_from_version_no": null,
+  "risk": {
+    "decision_id": "risk_5bf182dafbe8",
+    "tier": 1
+  },
+  "schema_version": 1,
+  "secret_refs": [],
+  "source": "internal_ui",
+  "source_type": "generated",
+  "tags": [],
+  "version": "1.0.0",
+  "version_no": 1
+}
