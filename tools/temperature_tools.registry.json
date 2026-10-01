@@ -1,0 +1,48 @@
+{
+  "artifact_type": "tool",
+  "change_type": "create",
+  "config": {
+    "approval": {
+      "approved": true,
+      "custom_filename": "temperature_tools.py",
+      "modifications": null,
+      "request_id": "d8310917-4d55-42ef-9e22-026373b69c6d",
+      "selected_tools": null
+    },
+    "description": "Create one pure-Python tool named convert_temperature(value: float, unit: str) -> dict that converts a temperature between celsius and fahrenheit. No network calls, no files, no environment variables, standard library only.",
+    "existing_tools_context": false,
+    "filename": "temperature_tools.py",
+    "functions": [
+      "convert_temperature"
+    ],
+    "llm_provider": "google",
+    "model_name": "gemini-2.5-flash",
+    "preferred_category": "utilities",
+    "suggested_tags": [
+      "temperature",
+      "conversion"
+    ]
+  },
+  "created_by": null,
+  "dependencies": [],
+  "description": "Create one pure-Python tool named convert_temperature(value: float, unit: str) -> dict that converts a temperature between celsius and fahrenheit. No network calls, no files, no environment variables, standard library only.",
+  "display_name": "Temperature Tools",
+  "files": [
+    "tools/temperature_tools.py"
+  ],
+  "name": "temperature_tools.py",
+  "origin": "tenant_generated",
+  "replaces_version_no": null,
+  "restored_from_version_no": null,
+  "risk": {
+    "decision_id": "risk_8083099bfde1",
+    "tier": 1
+  },
+  "schema_version": 1,
+  "secret_refs": [],
+  "source": "internal_ui",
+  "source_type": "generated",
+  "tags": [],
+  "version": "1.0.0",
+  "version_no": 1
+}
