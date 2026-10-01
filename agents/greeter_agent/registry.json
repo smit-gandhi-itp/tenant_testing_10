@@ -1,0 +1,57 @@
+{
+  "artifact_type": "agent",
+  "change_type": "create",
+  "config": {
+    "agent_level_auth_required": false,
+    "connectors": [],
+    "description": "Converts temperatures between Celsius and Fahrenheit",
+    "direct_tools": null,
+    "guardrails": null,
+    "instructions": "You are a friendly assistant that helps people convert temperatures between Celsius and Fahrenheit. Always state both the input and the converted value, round to one decimal place, and explain the formula in one short sentence when the user asks how it works. You are a friendly assistant that helps people convert temperatures between Celsius and Fahrenheit. Always state both the input and the converted value, round to one decimal place, and explain the formula in one short sentence when the user asks how it works. You are a friendly assistant that helps people convert temperatures between Celsius and Fahrenheit. Always state both the input and the converted value, round to one decimal place, and explain the formula in one short sentence when the user asks how it works. ",
+    "mcp_servers": [],
+    "model_settings": {
+      "max_tokens": null,
+      "name": "default",
+      "temperature": 0.3,
+      "top_k": null,
+      "top_p": null
+    },
+    "name": "greeter_agent",
+    "oauth_protected_tools": [],
+    "policies": null,
+    "skill_refs": [],
+    "skills": [],
+    "tags": [
+      "temperature",
+      "demo"
+    ],
+    "tool_guardrails": null
+  },
+  "created_by": null,
+  "dependencies": [],
+  "description": "Converts temperatures between Celsius and Fahrenheit",
+  "display_name": "Greeter Agent",
+  "files": [
+    "agents/greeter_agent/agent.json",
+    "agents/greeter_agent/agent.py",
+    "agents/greeter_agent/prompt.py"
+  ],
+  "name": "greeter_agent",
+  "origin": "tenant_generated",
+  "replaces_version_no": null,
+  "restored_from_version_no": null,
+  "risk": {
+    "decision_id": "risk_16791a6c66c7",
+    "tier": 1
+  },
+  "schema_version": 1,
+  "secret_refs": [],
+  "source": "internal_ui",
+  "source_type": "generated",
+  "tags": [
+    "temperature",
+    "demo"
+  ],
+  "version": "1.0.0",
+  "version_no": 1
+}
