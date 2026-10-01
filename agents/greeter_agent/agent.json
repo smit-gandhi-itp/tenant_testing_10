@@ -1,7 +1,7 @@
 {
   "name": "greeter_agent",
   "displayName": "Greeter Agent",
-  "description": "Converts temperatures between Celsius and Fahrenheit",
+  "description": "Greets users and converts temperatures (v2)",
   "url": "http://localhost:8001/a2a/greeter_agent",
   "version": "1.0.0",
   "protocolVersion": "0.3",

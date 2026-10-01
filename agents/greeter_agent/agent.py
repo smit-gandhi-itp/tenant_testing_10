@@ -29,7 +29,7 @@ greeter_agent = Agent(
 
     ],
     generate_content_config=types.GenerateContentConfig(
-        temperature=0.3,
+        temperature=0.5,
         safety_settings=[
             types.SafetySetting(
                 category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
