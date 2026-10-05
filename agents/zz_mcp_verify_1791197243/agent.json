@@ -1,0 +1,15 @@
+{
+  "name": "zz_mcp_verify_1791197243",
+  "displayName": "Zz Mcp Verify 1791197243",
+  "description": "mcp verify",
+  "url": "http://localhost:8001/a2a/zz_mcp_verify_1791197243",
+  "version": "1.0.0",
+  "protocolVersion": "0.3",
+  "capabilities": {},
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ]
+}
