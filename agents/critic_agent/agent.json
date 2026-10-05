@@ -2,14 +2,28 @@
   "name": "critic_agent",
   "displayName": "Critic Agent",
   "description": "Critiques documents, identifying areas for improvement and providing actionable feedback.",
-  "url": "http://localhost:8001/a2a/critic_agent",
   "version": "1.0.0",
-  "protocolVersion": "0.3",
-  "capabilities": {},
-  "defaultInputModes": [
-    "text/plain"
-  ],
-  "defaultOutputModes": [
-    "text/plain"
+  "url": "http://localhost:8001/a2a/critic_agent",
+  "authentication": { "type": "none" },
+  "capabilities": {
+    "streaming": true,
+    "functions": true,
+    "tool_generation": false
+  },
+  "defaultInputModes": ["text"],
+  "defaultOutputModes": ["text"],
+  "skills": [
+    {
+      "id": "document_critique",
+      "name": "Document Critique",
+      "description": "Evaluate documents and provide constructive feedback on structure, clarity, and quality.",
+      "tags": ["critique", "review", "evaluation"],
+      "examples": [
+        "Critique a document draft and identify areas for improvement",
+        "Review document structure and organization",
+        "Evaluate document clarity and completeness"
+      ]
+    }
   ]
 }
+
