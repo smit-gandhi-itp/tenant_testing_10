@@ -1,0 +1,15 @@
+{
+  "name": "writer_agent",
+  "displayName": "Writer Agent",
+  "description": "Generates and refines documents on various topics, creating clear and well-structured content.",
+  "url": "http://localhost:8001/a2a/writer_agent",
+  "version": "1.0.0",
+  "protocolVersion": "0.3",
+  "capabilities": {},
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ]
+}
