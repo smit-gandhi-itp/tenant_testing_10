@@ -1,16 +1,17 @@
 {
   "artifact_type": "agent",
-  "change_type": "create",
+  "change_type": "edit",
   "config": {
     "agent_level_auth_required": false,
     "connectors": [],
-    "description": "Summary for a gives topic and add integers ",
+    "description": "Summary for a gives topic ",
     "direct_tools": {
       "tool_filter": null,
       "tool_names": []
     },
+    "fork_confirmed": false,
     "guardrails": null,
-    "instructions": "Summary for a gives topic and add integers",
+    "instructions": "Summary for a gives topic",
     "mcp_servers": [],
     "model_settings": {
       "max_tokens": null,
@@ -29,7 +30,7 @@
   },
   "created_by": null,
   "dependencies": [],
-  "description": "Summary for a gives topic and add integers ",
+  "description": "Summary for a gives topic ",
   "display_name": "Sample Agent",
   "files": [
     "agents/sample_agent/agent.json",
@@ -38,17 +39,17 @@
   ],
   "name": "sample_agent",
   "origin": "tenant_generated",
-  "replaces_version_no": null,
+  "replaces_version_no": 1,
   "restored_from_version_no": null,
   "risk": {
-    "decision_id": "risk_67f5494da94f",
-    "tier": 1
+    "decision_id": "risk_231cf7c23fbb",
+    "tier": 2
   },
   "schema_version": 1,
   "secret_refs": [],
   "source": "internal_ui",
   "source_type": "generated",
   "tags": [],
-  "version": "1.0.0",
-  "version_no": 1
+  "version": "1.0.1",
+  "version_no": 2
 }

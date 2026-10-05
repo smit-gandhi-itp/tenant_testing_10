@@ -6,9 +6,9 @@ System prompt for sample_agent.
 """
 
 AGENT_DESCRIPTION = """
-Summary for a gives topic and add integers 
+Summary for a gives topic 
 """
 
 SYSTEM_PROMPT = """
-Summary for a gives topic and add integers
+Summary for a gives topic
 """

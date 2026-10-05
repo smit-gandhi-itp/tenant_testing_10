@@ -1,7 +1,7 @@
 {
   "name": "sample_agent",
   "displayName": "Sample Agent",
-  "description": "Summary for a gives topic and add integers ",
+  "description": "Summary for a gives topic ",
   "url": "http://localhost:8001/a2a/sample_agent",
   "version": "1.0.0",
   "protocolVersion": "0.3",
