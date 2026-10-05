@@ -1,0 +1,15 @@
+{
+  "name": "zz_verify_1791196139",
+  "displayName": "Zz Verify 1791196139",
+  "description": "verification agent",
+  "url": "http://localhost:8001/a2a/zz_verify_1791196139",
+  "version": "1.0.0",
+  "protocolVersion": "0.3",
+  "capabilities": {},
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ]
+}

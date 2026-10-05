@@ -1,0 +1,65 @@
+{
+  "artifact_type": "agent",
+  "change_type": "create",
+  "config": {
+    "agent_level_auth_required": false,
+    "connectors": [],
+    "description": "verification agent",
+    "direct_tools": {
+      "tool_filter": null,
+      "tool_names": [
+        "add_integers",
+        "load_memory"
+      ]
+    },
+    "guardrails": null,
+    "instructions": "You are a test agent.",
+    "mcp_servers": [],
+    "model_settings": {
+      "max_tokens": null,
+      "name": "default",
+      "temperature": 0.7,
+      "top_k": null,
+      "top_p": null
+    },
+    "name": "zz_verify_1791196139",
+    "oauth_protected_tools": [],
+    "policies": null,
+    "skill_refs": [],
+    "skills": [],
+    "tags": null,
+    "tool_guardrails": null
+  },
+  "created_by": null,
+  "dependencies": [
+    {
+      "name": "p_calculator_tools.py",
+      "origin": "platform",
+      "type": "tool",
+      "upstream_content_hash": "87e4113a69cc4729f671ae7596bbec9b98d20c4cb32212bf159fe695d0395c7d",
+      "upstream_version": "platform"
+    }
+  ],
+  "description": "verification agent",
+  "display_name": "Zz Verify 1791196139",
+  "files": [
+    "agents/zz_verify_1791196139/agent.json",
+    "agents/zz_verify_1791196139/agent.py",
+    "agents/zz_verify_1791196139/prompt.py"
+  ],
+  "name": "zz_verify_1791196139",
+  "origin": "tenant_generated",
+  "replaces_version_no": null,
+  "restored_from_version_no": null,
+  "risk": {
+    "decision_id": "risk_a0b48e2d1ee4",
+    "tier": 1
+  },
+  "schema_version": 1,
+  "secret_refs": [],
+  "source": "internal_ui",
+  "source_type": "generated",
+  "tags": [],
+  "version": "1.0.0",
+  "version_no": 1
+}
