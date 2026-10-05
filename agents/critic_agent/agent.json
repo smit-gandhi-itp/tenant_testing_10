@@ -1,0 +1,15 @@
+{
+  "name": "critic_agent",
+  "displayName": "Critic Agent",
+  "description": "Critiques documents, identifying areas for improvement and providing actionable feedback.",
+  "url": "http://localhost:8001/a2a/critic_agent",
+  "version": "1.0.0",
+  "protocolVersion": "0.3",
+  "capabilities": {},
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ]
+}
