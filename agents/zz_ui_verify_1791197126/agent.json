@@ -1,0 +1,15 @@
+{
+  "name": "zz_ui_verify_1791197126",
+  "displayName": "Zz Ui Verify 1791197126",
+  "description": "ui verification",
+  "url": "http://localhost:8001/a2a/zz_ui_verify_1791197126",
+  "version": "1.0.0",
+  "protocolVersion": "0.3",
+  "capabilities": {},
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ]
+}
