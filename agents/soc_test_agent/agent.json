@@ -1,0 +1,27 @@
+{
+  "name": "soc_test_agent",
+  "displayName": "Soc Test Agent",
+  "description": "SOC triage agent for the Action Gate demo. Reads batches of security logs, spots attacks and contains them through the firewall and the user directory.",
+  "url": "http://localhost:8001/a2a/soc_test_agent",
+  "version": "1.0.0",
+  "protocolVersion": "0.3",
+  "capabilities": {},
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ],
+  "guardrails": {
+    "input": [
+      "prompt_injection_strip"
+    ],
+    "traceability": true
+  },
+  "tool_policy": {
+    "firewall_block_ip": "allow",
+    "directory_disable_account": "hold",
+    "firewall_open_port": "deny",
+    "default": "deny"
+  }
+}
