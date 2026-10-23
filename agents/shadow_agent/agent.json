@@ -1,0 +1,19 @@
+{
+  "name": "shadow_agent",
+  "displayName": "Shadow Agent",
+  "description": "Unowned network helper (the rogue agent in the Action Gate demo). It keeps trying to open firewall ports.",
+  "url": "http://localhost:8001/a2a/shadow_agent",
+  "version": "1.0.0",
+  "protocolVersion": "0.3",
+  "capabilities": {},
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ],
+  "tool_policy": {
+    "firewall_open_port": "deny",
+    "default": "deny"
+  }
+}
