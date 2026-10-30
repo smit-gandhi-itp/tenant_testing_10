@@ -1,0 +1,15 @@
+{
+  "name": "agent_10",
+  "displayName": "Agent 10",
+  "description": "Summary Agent",
+  "url": "http://localhost:8001/a2a/agent_10",
+  "version": "1.0.0",
+  "protocolVersion": "0.3",
+  "capabilities": {},
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ]
+}
