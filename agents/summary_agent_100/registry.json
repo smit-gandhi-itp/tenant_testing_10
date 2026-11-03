@@ -1,0 +1,68 @@
+{
+  "artifact_type": "agent",
+  "change_type": "create",
+  "config": {
+    "agent_level_auth_required": false,
+    "connectors": [],
+    "description": "Generates Summary",
+    "direct_tools": {
+      "tool_filter": null,
+      "tool_names": [
+        "add"
+      ]
+    },
+    "guardrails": null,
+    "instructions": "Generates Summary",
+    "mcp_servers": [],
+    "model_settings": {
+      "max_tokens": null,
+      "name": "bedrock/us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "temperature": 0.7,
+      "top_k": null,
+      "top_p": null
+    },
+    "name": "summary_agent_100",
+    "oauth_protected_tools": [],
+    "policies": null,
+    "skill_refs": [],
+    "skills": [],
+    "tags": null,
+    "tenant_mcp_servers": [],
+    "tenant_skills": [],
+    "tenant_tools": [],
+    "tool_guardrails": null
+  },
+  "created_by": "support@intuitive.ai",
+  "dependencies": [
+    {
+      "name": "pp_calculator_tools.py",
+      "origin": "platform",
+      "type": "tool",
+      "upstream_content_hash": "560b51e7b9dc8379b82976b1f5eeae291db36676b0c021a8e7e33de7afab9a88",
+      "upstream_version": "platform"
+    }
+  ],
+  "description": "Generates Summary",
+  "display_name": "Summary Agent 100",
+  "files": [
+    "agents/summary_agent_100/agent.json",
+    "agents/summary_agent_100/agent.py",
+    "agents/summary_agent_100/manifest.json",
+    "agents/summary_agent_100/prompt.py"
+  ],
+  "name": "summary_agent_100",
+  "origin": "tenant_generated",
+  "replaces_version_no": null,
+  "restored_from_version_no": null,
+  "risk": {
+    "decision_id": "risk_36d0958d9468",
+    "tier": 1
+  },
+  "schema_version": 1,
+  "secret_refs": [],
+  "source": "internal_ui",
+  "source_type": "generated",
+  "tags": [],
+  "version": "1.0.0",
+  "version_no": 1
+}
