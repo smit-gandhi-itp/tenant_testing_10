@@ -1,0 +1,74 @@
+{
+  "approval": {
+    "approved_by": null,
+    "reason": null
+  },
+  "asset": {
+    "asset_id": "cp_5d6265bf8778e05394fc85e9",
+    "name": "expense_policy_helper",
+    "tenant_id": "acme-demo"
+  },
+  "card_type": "agent_governance_card",
+  "evaluations": [],
+  "intended_use": {
+    "needs_review": true,
+    "value": "Used by Acme employees who need quick answers about expense policy or want to check if an expense amount requires special approval. Accessible via chat interface before employees submit formal expense reports."
+  },
+  "limitations": {
+    "needs_review": true,
+    "value": "Provides policy guidance and limit validation only. Does not have access to the actual expense management system, cannot see individual employee spending, and cannot override policy requirements. Complex situations requiring judgment should be referred to managers or the Finance department."
+  },
+  "out_of_scope_uses": {
+    "needs_review": true,
+    "value": "Cannot submit or approve actual expense reports, cannot access employee expense history or financial records, cannot make exceptions to policy, cannot process reimbursements."
+  },
+  "purpose": {
+    "needs_review": true,
+    "value": "Helps Acme employees understand the travel and expense policy and verify if their expense claims are within approved limits before submission."
+  },
+  "risk": {
+    "autonomy_level": null,
+    "decision_id": "risk_563c8d5864eb",
+    "riskgate_tier": "tier_1",
+    "signal_codes": [
+      "dynamic_import"
+    ]
+  },
+  "schema_version": 1,
+  "technical": {
+    "connectors": [],
+    "credentials": [],
+    "dependencies": [
+      "tool/check_expense_limit.py"
+    ],
+    "guardrails": {
+      "input": [
+        "jailbreak_detection",
+        "prompt_injection"
+      ],
+      "output": [
+        "output_validation"
+      ],
+      "tool": [
+        "argument_validation",
+        "tool_whitelisting"
+      ],
+      "traceability": true
+    },
+    "mcp_servers": [],
+    "model": "default",
+    "skills": [],
+    "tools": [
+      {
+        "name": "check_expense_limit"
+      }
+    ]
+  },
+  "version": {
+    "change_type": "create",
+    "replaces_version_no": null,
+    "restored_from_version_no": null,
+    "version": "1.0.0",
+    "version_no": 1
+  }
+}

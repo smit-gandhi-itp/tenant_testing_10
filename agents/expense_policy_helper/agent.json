@@ -1,0 +1,38 @@
+{
+  "name": "expense_policy_helper",
+  "displayName": "Expense Policy Helper",
+  "description": "Answers questions about Acme's travel and expense policy and validates whether claim amounts are within policy limits.",
+  "url": "http://localhost:8001/a2a/expense_policy_helper",
+  "version": "1.0.0",
+  "protocolVersion": "0.3",
+  "capabilities": {},
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ],
+  "guardrails": {
+    "input": [
+      "prompt_injection",
+      "jailbreak_detection"
+    ],
+    "output": [
+      "output_validation"
+    ],
+    "tool": {
+      "enabled": [
+        "argument_validation",
+        "tool_whitelisting"
+      ],
+      "custom_config": {
+        "allowed_tools": [
+          "check_expense_limit",
+          "load_artifacts",
+          "load_memory"
+        ]
+      }
+    },
+    "traceability": true
+  }
+}
