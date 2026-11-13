@@ -1,0 +1,65 @@
+{
+  "approval": {
+    "approved_by": null,
+    "reason": null
+  },
+  "asset": {
+    "asset_id": "cp_6be84ce2709841e1cae5f6f3",
+    "name": "acme_meeting_notes_summarizer",
+    "tenant_id": "acme-demo"
+  },
+  "card_type": "agent_governance_card",
+  "evaluations": [],
+  "intended_use": {
+    "needs_review": true,
+    "value": "Internal use by Acme team members to process their own meeting notes or shared team meeting notes."
+  },
+  "limitations": {
+    "needs_review": true,
+    "value": "Cannot access meeting recordings, calendar systems, or external document storage. Cannot verify accuracy of the notes provided or cross-reference with other meetings. Effectiveness depends on the quality and completeness of the input notes."
+  },
+  "out_of_scope_uses": {
+    "needs_review": true,
+    "value": "Not for legal record-keeping, compliance documentation, or processing confidential HR/legal matters requiring specialized handling. Cannot schedule tasks, assign work in project management tools, or send notifications."
+  },
+  "purpose": {
+    "needs_review": true,
+    "value": "Helps Acme employees quickly extract decisions and action items from meeting notes."
+  },
+  "risk": {
+    "autonomy_level": null,
+    "decision_id": "risk_e68a417cd341",
+    "riskgate_tier": "tier_1",
+    "signal_codes": []
+  },
+  "schema_version": 1,
+  "technical": {
+    "connectors": [],
+    "credentials": [],
+    "dependencies": [],
+    "guardrails": {
+      "input": [
+        "jailbreak_detection",
+        "pii_detection",
+        "prompt_injection"
+      ],
+      "output": [
+        "output_pii_redaction",
+        "output_validation"
+      ],
+      "tool": [],
+      "traceability": true
+    },
+    "mcp_servers": [],
+    "model": "default",
+    "skills": [],
+    "tools": []
+  },
+  "version": {
+    "change_type": "create",
+    "replaces_version_no": null,
+    "restored_from_version_no": null,
+    "version": "1.0.0",
+    "version_no": 1
+  }
+}

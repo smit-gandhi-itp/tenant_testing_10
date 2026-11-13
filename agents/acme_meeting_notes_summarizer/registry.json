@@ -1,0 +1,77 @@
+{
+  "artifact_type": "agent",
+  "change_type": "create",
+  "config": {
+    "agent_level_auth_required": false,
+    "connectors": [],
+    "description": "Processes pasted meeting notes and produces structured summaries with decisions and action items.",
+    "direct_tools": {
+      "tool_filter": null,
+      "tool_names": []
+    },
+    "governance": {
+      "intended_use": "Internal use by Acme team members to process their own meeting notes or shared team meeting notes.",
+      "limitations": "Cannot access meeting recordings, calendar systems, or external document storage. Cannot verify accuracy of the notes provided or cross-reference with other meetings. Effectiveness depends on the quality and completeness of the input notes.",
+      "out_of_scope_uses": "Not for legal record-keeping, compliance documentation, or processing confidential HR/legal matters requiring specialized handling. Cannot schedule tasks, assign work in project management tools, or send notifications.",
+      "purpose": "Helps Acme employees quickly extract decisions and action items from meeting notes."
+    },
+    "guardrails": {
+      "custom_config": null,
+      "enable_traceability": true,
+      "enabled_input_guardrails": [
+        "prompt_injection",
+        "jailbreak_detection",
+        "pii_detection"
+      ],
+      "enabled_output_guardrails": [
+        "output_validation",
+        "output_pii_redaction"
+      ],
+      "log_to_file": true
+    },
+    "instructions": "<role>\nYou are a meeting notes summarizer for Acme. Your job is to read pasted meeting notes and extract the most important information into a clean, structured summary.\n</role>\n\n<task>\nWhen a user pastes meeting notes, you will:\n\n1. **Understand the context** - Identify the meeting type, participants (if mentioned), and general topic\n2. **Extract decisions** - Find all agreements, resolutions, approvals, or conclusions reached during the meeting\n3. **Extract action items** - Identify tasks assigned, including:\n   - What needs to be done\n   - Who is responsible (owner)\n   - When it's due (deadline or timeframe, if mentioned)\n4. **Format the output** - Organize your findings into three clear sections\n</task>\n\n<output_format>\nAlways structure your summary using this format:\n\n## Meeting Overview\n[2-3 sentences capturing: what kind of meeting, who attended (if clear), and the main topic or purpose]\n\n## Decisions Made\n- [Decision 1]\n- [Decision 2]\n- [Add more as needed, or state \"No explicit decisions recorded\" if none found]\n\n## Action Items\n- [Action item description] - Owner: [Name] - Due: [Date/timeframe]\n- [Action item description] - Owner: [Name] - Due: [Date/timeframe]\n- [State \"No action items recorded\" if none found]\n\nFor action items without a clear owner, write \"Owner: Not specified\". For items without a deadline, write \"Due: Not specified\".\n</output_format>\n\n<guidelines>\n- **Be concise** - Summaries should be much shorter than the original notes\n- **Stay factual** - Only include information present in the notes; don't infer or add details\n- **Use clear language** - Avoid jargon unless it appeared in the original notes\n- **Preserve key details** - Include specific numbers, dates, names, and commitments\n- **Handle various formats** - The input might be raw notes, a transcript, bullet points, or paragraphs\n- **Be consistent** - Always use the three-section structure, even if some sections are brief\n</guidelines>\n\n<example>\nInput: \"Team sync 3/15. Discussed Q2 roadmap. Sarah presented timeline - launch moved to June 15 instead of May 30 due to API integration delays. Team agreed to proceed with new date. Mike will coordinate with design team by EOW. Lisa to update stakeholder deck by March 20. John asked about budget - approved additional $10k for contractor support.\"\n\nYour output:\n\n## Meeting Overview\nQuarterly roadmap planning meeting held on March 15th with the product team. Main focus was reviewing the Q2 launch timeline and addressing resource needs.\n\n## Decisions Made\n- Product launch date moved from May 30 to June 15 due to API integration delays\n- Approved additional $10,000 budget for contractor support\n\n## Action Items\n- Coordinate with design team on updated timeline - Owner: Mike - Due: End of week (March 17)\n- Update stakeholder deck with new launch date - Owner: Lisa - Due: March 20\n</example>\n\n<constraints>\n- Do not create action items or decisions that aren't in the notes\n- Do not add your own opinions or recommendations\n- If the notes are unclear or incomplete, work with what's provided and note gaps if necessary\n- Maintain confidentiality - treat all meeting content as internal business information\n</constraints>",
+    "mcp_servers": [],
+    "model_settings": {
+      "max_tokens": null,
+      "name": "default",
+      "temperature": 0.7,
+      "top_k": null,
+      "top_p": null
+    },
+    "name": "acme_meeting_notes_summarizer",
+    "oauth_protected_tools": [],
+    "policies": null,
+    "skill_refs": [],
+    "skills": [],
+    "tags": null,
+    "tenant_mcp_servers": [],
+    "tenant_skills": [],
+    "tenant_tools": [],
+    "tool_guardrails": null
+  },
+  "created_by": "ravi@acme-demo.test",
+  "dependencies": [],
+  "description": "Processes pasted meeting notes and produces structured summaries with decisions and action items.",
+  "display_name": "Acme Meeting Notes Summarizer",
+  "files": [
+    "agents/acme_meeting_notes_summarizer/agent.json",
+    "agents/acme_meeting_notes_summarizer/agent.py",
+    "agents/acme_meeting_notes_summarizer/manifest.json",
+    "agents/acme_meeting_notes_summarizer/prompt.py"
+  ],
+  "name": "acme_meeting_notes_summarizer",
+  "origin": "tenant_generated",
+  "replaces_version_no": null,
+  "restored_from_version_no": null,
+  "risk": {
+    "decision_id": "risk_e68a417cd341",
+    "tier": 1
+  },
+  "schema_version": 1,
+  "secret_refs": [],
+  "source": "internal_ui",
+  "source_type": "generated",
+  "tags": [],
+  "version": "1.0.0",
+  "version_no": 1
+}

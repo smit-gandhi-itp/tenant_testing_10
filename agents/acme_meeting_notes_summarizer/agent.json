@@ -1,0 +1,27 @@
+{
+  "name": "acme_meeting_notes_summarizer",
+  "displayName": "Acme Meeting Notes Summarizer",
+  "description": "Processes pasted meeting notes and produces structured summaries with decisions and action items.",
+  "url": "http://localhost:8001/a2a/acme_meeting_notes_summarizer",
+  "version": "1.0.0",
+  "protocolVersion": "0.3",
+  "capabilities": {},
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ],
+  "guardrails": {
+    "input": [
+      "prompt_injection",
+      "jailbreak_detection",
+      "pii_detection"
+    ],
+    "output": [
+      "output_validation",
+      "output_pii_redaction"
+    ],
+    "traceability": true
+  }
+}
